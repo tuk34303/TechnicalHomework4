@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PetMeds.master.cs" Inherits="TechnicalHomework4.PetMeds" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        #body{
+        background-position: center;
+        background-repeat: repeat;
+        background-size: cover;
+        }
+    </style>
+</head>
+<body style="background-image:url(backgroundimage.jpg)" id="body">
+    <form id="form1" runat="server">
+        <div>
+             <h2 style="z-index: 1; font-family:Arial; color:darkslateblue; left: 562px; top: 77px; position: absolute; height: 35px; width: 335px">Welcome To Pet Meds!</h2>
+            <div style="z-index: 1; left: 24px; top: 134px; position: absolute; height: 22px; width: 512px">
+                <a href="Customer.aspx">For the customer: please click here to fill out important information</a>
+            </div>
+            <div style="z-index: 1; left: 635px; top: 138px; position: absolute; height: 22px; width: 205px">
+            <a href="RateExperience.aspx">Rate your experience</a>
+            </div>
+            <div style="z-index: 1; left: 980px; top: 139px; position: absolute; height: 22px; width: 205px">
+            <a href="VetIntro.aspx">Pet Vet</a>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+             <asp:Label ID="StartIbl" runat="server" style="z-index: 1; left: 46px; top: 98px; position: absolute" Text="Start here below with customer page:"></asp:Label>
+        </div>
+    </form>
+</body>
+</html>
